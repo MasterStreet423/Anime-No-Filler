@@ -101,3 +101,8 @@ removeScrollbar()
 $('#remove-scroll-style').remove();*/
 
 
+function allAnimes(){
+    chrome.tabs.create({url: '/pages/all/index.html'});
+}
+
+document.getElementById('see-all-button').addEventListener('click', allAnimes);
